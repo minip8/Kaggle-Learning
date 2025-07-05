@@ -14,7 +14,7 @@ This little quest will also be my first time working with Git, so that's excitin
 Given a dataset of specific information about passengers aboard the fateful Titanic incident, and if they survived or not - build a model to predict the survival of many other passengers given another unseen dataset.
 
 ### The data
-In the [data](kaggle_learning/datasets/titanic/), the known factors of each passenger are:
+In the [data](Kaggle-Learning/datasets/titanic/), the known factors of each passenger are:
 - PassengerID
 - Survived
 - Passenger Class (Pclass)
@@ -31,5 +31,5 @@ In the [data](kaggle_learning/datasets/titanic/), the known factors of each pass
 ### The model
 The model used is a [RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) part of the [scikit-learn](https://scikit-learn.org/stable/) library.
 
-With the built in features of the RandomForestClassifier, it was relatively easy to fit the model against the [training data](kaggle_learning/datasets/titanic/train.csv), then predict the survival of each passenger in the [testing data](kaggle_learning/datasets/titanic/test.csv).<br>
+With the built in features of the RandomForestClassifier, it was relatively easy to fit the model against the [training data](Kaggle-Learning/datasets/titanic/train.csv), then predict the survival of each passenger in the [testing data](Kaggle-Learning/datasets/titanic/test.csv).<br>
 This model had an accuracy of 77.51%.
