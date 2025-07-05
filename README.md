@@ -32,4 +32,4 @@ In the [data](datasets/titanic/), the known factors of each passenger are:
 The model used is a [RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) part of the [scikit-learn](https://scikit-learn.org/stable/) library.
 
 With the built in features of the RandomForestClassifier, it was relatively easy to fit the model against the [training data](datasets/titanic/train.csv), then predict the survival of each passenger in the [testing data](datasets/titanic/test.csv).<br>
-This model had an accuracy of 77.51%.
+This model has an approximate accuracy of 77%.
