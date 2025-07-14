@@ -9,7 +9,7 @@ Hopefully, it'll be a fun experience, where I can learn the basics of a variety 
 
 This little quest will also be my first time working with Git, so that's exciting!
 
-## Titanic
+## An example of the process - Titanic
 ### The target
 Given a dataset of specific information about passengers aboard the fateful Titanic incident, and if they survived or not - build a model to predict the survival of many other passengers given another unseen dataset.
 
@@ -33,3 +33,42 @@ The model used is a [RandomForestClassifier](https://scikit-learn.org/stable/mod
 
 With the built in features of the RandomForestClassifier, it was relatively easy to fit the model against the [training data](datasets/titanic/train.csv), then predict the survival of each passenger in the [testing data](datasets/titanic/test.csv).<br>
 This model has an approximate accuracy of 77%.
+
+## Stuff I've learnt so far
+### Venv
+Better late than never.
+
+
+### Git
+A pretty awesome way to track my little quest. I learned how to:
+- set up SSH key pairs to remotely access repositories
+- push/pull
+- checkout/merge branches (though not for this repository)
+
+
+### tf.keras
+Used the [Sequential](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential) class in [red wine](notebooks/red_wine.ipynb) and [ionosphere](notebooks/ionosphere.ipynb).
+
+Plotting the training history of a model was really interesting - it made a nice challenge to try and avoid under/overfitting.<br>
+My approach was to tweak:
+- Layer size
+- Number of layers
+- Dropout rates
+- Early stopping patience
+
+A highlight was when the [ionosphere](notebooks/ionosphere.ipynb) Sequential model managed a 94% accuracy on validation data.
+![ionosphere Sequential model](images/ionosphere_1.png)
+Maybe it got lucky, maybe it was pure skill on my end. Who knows?
+
+I'm sure there's much more to just these parameters, and I look forward to learning more!
+
+
+### Other
+
+#### The side quest to get GPU support
+I wanted to train my models locally, but found out that any TensorFlow version past 2.10 doesn't allow for native Windows GPU support.<br>
+So I thought to myself, what is logical here? Hmm, maybe downgrade to TensorFlow 2.10?
+
+Nah.
+
+So, as any logical human being on Windows would do, I decided to migrate my quest over into WSL. There, I could happily have GPU support AND use latest TensorFlow version! Ez.
