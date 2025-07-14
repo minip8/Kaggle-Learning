@@ -56,8 +56,8 @@ My approach was to tweak:
 - Dropout rates
 - Early stopping patience
 
-A highlight was when the [ionosphere](notebooks/ionosphere.ipynb) Sequential model managed a 94% accuracy on validation data.
-![ionosphere Sequential model](images/ionosphere_1.png)
+A highlight was when the [ionosphere](notebooks/ionosphere.ipynb) Sequential model managed a 94% accuracy on validation data.<br>
+![ionosphere Sequential model](images/ionosphere_1.png)<br>
 Maybe it got lucky, maybe it was pure skill on my end. Who knows?
 
 I'm sure there's much more to just these parameters, and I look forward to learning more!
